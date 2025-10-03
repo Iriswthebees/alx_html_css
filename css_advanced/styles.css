@@ -1,3 +1,117 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(251, 190, 243);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #071629; /* fallback */
+}
+
+/* HEADER */
+header {
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #C271FF; /* purple hover */
+}
+
+/* HERO SECTION */
+.hero {
+  background: url("./images/Object.jpg") no-repeat center center/cover;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-tags span {
+  margin: 0 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cta-btn {
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: #9f47d8;
+}
+
+/* PROS SECTION */
+.learn-pros {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.learn-pros h2 {
+  color: #C271FF;
+  margin-bottom: 40px;
+}
+
+.pros {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.pro img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.pro h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
 }
